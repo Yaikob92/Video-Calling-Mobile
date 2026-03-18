@@ -1,6 +1,7 @@
 import { useAuth } from "@clerk/expo";
 import Ionicons from "@expo/vector-icons/Ionicons";
 import { Redirect, Tabs } from "expo-router";
+import { COLORS } from "../../lib/theme";
 
 const TabsLayout = () => {
   const { isSignedIn, isLoaded } = useAuth();
@@ -12,7 +13,25 @@ const TabsLayout = () => {
   }
 
   return (
-    <Tabs screenOptions={{ tabBarActiveTintColor: "#6C5CE7" }}>
+    <Tabs
+      screenOptions={{
+        tabBarActiveTintColor: COLORS.primary,
+        tabBarInactiveTintColor: COLORS.textMuted,
+        headerShown: false,
+        tabBarStyle: {
+          backgroundColor: COLORS.surface,
+          borderTopColor: COLORS.border,
+          borderTopWidth: 1,
+          paddingBottom: 5,
+          paddingTop: 5,
+          height: 60,
+        },
+        tabBarLabelStyle: {
+          fontSize: 12,
+          fontWeight: "500",
+        },
+      }}
+    >
       <Tabs.Screen
         name="index"
         options={{
