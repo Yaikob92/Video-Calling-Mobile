@@ -5,10 +5,10 @@ import { useNavigation, useRouter } from "expo-router";
 import { useLayoutEffect } from "react";
 import { Text, TouchableOpacity, View } from "react-native";
 import { Channel, MessageInput, MessageList, useChatContext } from "stream-chat-expo";
-import { EmptyState } from "../../../../../components/EmptyState";
-import { FullScreenLoader } from "../../../../../components/FullScreenLoader";
-import { useAppContext } from "../../../../../contexts/AppProvider";
-import { COLORS } from "../../../../../lib/theme";
+import { EmptyState } from "@/components/EmptyState";
+import { FullScreenLoader } from "@/components/FullScreenLoader";
+import { useAppContext } from "@/contexts/AppProvider";
+import { COLORS } from "@/lib/theme";
 
 const ChannelScreen = () => {
     const { channel, setThread } = useAppContext();

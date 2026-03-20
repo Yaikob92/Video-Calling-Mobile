@@ -3,7 +3,7 @@ import { Ionicons } from "@expo/vector-icons";
 import { Image } from "expo-image";
 import { Alert, Pressable, ScrollView, Text, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
-import { COLORS } from "../../lib/theme";
+import { COLORS } from "@/lib/theme";
 
 const MENU_ITEMS = [
   {

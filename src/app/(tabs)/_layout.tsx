@@ -1,7 +1,7 @@
 import { useAuth } from "@clerk/expo";
 import Ionicons from "@expo/vector-icons/Ionicons";
 import { Redirect, Tabs } from "expo-router";
-import { COLORS } from "../../lib/theme";
+import { COLORS } from "@/lib/theme";
 
 const TabsLayout = () => {
   const { isSignedIn, isLoaded } = useAuth();

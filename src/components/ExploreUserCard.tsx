@@ -2,7 +2,7 @@ import { Ionicons } from "@expo/vector-icons";
 import { Image } from "expo-image";
 import { ActivityIndicator, Pressable, Text, View } from "react-native";
 import type { UserResponse } from "stream-chat";
-import { COLORS } from "../lib/theme";
+import { COLORS } from "@/lib/theme";
 
 type ExploreUserCardProps = {
     item: UserResponse;

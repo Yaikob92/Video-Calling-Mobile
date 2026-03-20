@@ -3,7 +3,7 @@ import type { Call } from "@stream-io/video-react-native-sdk";
 import { useEffect, useState } from "react";
 import { ActivityIndicator, StyleSheet, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
-import { COLORS } from "../lib/theme";
+import { COLORS } from "@/lib/theme";
 
 let StreamVideo: any = null;
 let StreamVideoClient: any = null;

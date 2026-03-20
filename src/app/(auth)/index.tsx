@@ -3,7 +3,7 @@ import { Image } from "expo-image";
 import { LinearGradient } from "expo-linear-gradient";
 import { ActivityIndicator, Pressable, Text, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
-import useSocialAuth from "../../hooks/useSocialAuth";
+import useSocialAuth from "@/hooks/useSocialAuth";
 
 const AuthScreen = () => {
   const { handleSocialAuth, loadingStrategy } = useSocialAuth();
@@ -105,7 +105,7 @@ const AuthScreen = () => {
                 <ActivityIndicator size={"small"} color={"#6C5CE7"} />
               ) : (
                 <Image
-                  source={require("../../../assets/images/google.png")}
+                  source={require("@/assets/images/google.png")}
                   style={{ width: 28, height: 28 }}
                   contentFit="contain"
                 />

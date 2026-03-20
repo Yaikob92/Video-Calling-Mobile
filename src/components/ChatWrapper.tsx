@@ -1,8 +1,8 @@
 import { useUser } from "@clerk/expo";
 import { useEffect, useRef } from "react";
 import { Chat, OverlayProvider, useCreateChatClient } from "stream-chat-expo";
-import { studyBuddyTheme } from "../lib/theme";
-import { FullScreenLoader } from "./FullScreenLoader";
+import { studyBuddyTheme } from "@/lib/theme";
+import { FullScreenLoader } from "@/components/FullScreenLoader";
 
 type UserResource = NonNullable<ReturnType<typeof useUser>["user"]>;
 

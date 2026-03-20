@@ -5,12 +5,12 @@ import { ActivityIndicator, FlatList, Pressable, Text, TextInput, View } from "r
 import { SafeAreaView } from "react-native-safe-area-context";
 import type { UserResponse } from "stream-chat";
 import { useChatContext } from "stream-chat-expo";
-import ExploreUserCard from "../../components/ExploreUserCard";
-import ListEmptyComponent from "../../components/ListEmptyComponent";
-import { useAppContext } from "../../contexts/AppProvider";
-import useStartChat from "../../hooks/useStartChat";
-import useStreamUsers from "../../hooks/useStreamUsers";
-import { COLORS } from "../../lib/theme";
+import ExploreUserCard from "@/components/ExploreUserCard";
+import ListEmptyComponent from "@/components/ListEmptyComponent";
+import { useAppContext } from "@/contexts/AppProvider";
+import useStartChat from "@/hooks/useStartChat";
+import useStreamUsers from "@/hooks/useStreamUsers";
+import { COLORS } from "@/lib/theme";
 
 const ExploreScreen = () => {
   const { setChannel } = useAppContext();

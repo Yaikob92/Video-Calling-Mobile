@@ -1,6 +1,6 @@
 import { ActivityIndicator, Text, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
-import { COLORS } from "../lib/theme";
+import { COLORS } from "@/lib/theme";
 
 export function FullScreenLoader({ message }: { message: string }) {
     return (

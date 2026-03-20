@@ -3,8 +3,8 @@ import { tokenCache } from "@clerk/expo/token-cache";
 import { Stack } from "expo-router";
 import { GestureHandlerRootView } from "react-native-gesture-handler";
 import "../../global.css";
-import ChatWrapper from "../components/ChatWrapper";
-import { AppProvider } from "../contexts/AppProvider";
+import ChatWrapper from "@/components/ChatWrapper";
+import { AppProvider } from "@/contexts/AppProvider";
 
 const publishableKey = process.env.EXPO_PUBLIC_CLERK_PUBLISHABLE_KEY!;
 

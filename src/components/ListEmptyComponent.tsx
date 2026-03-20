@@ -1,6 +1,6 @@
 import { Ionicons } from "@expo/vector-icons";
 import { Text, View } from "react-native";
-import { COLORS } from "../lib/theme";
+import { COLORS } from "@/lib/theme";
 
 export default function ListEmptyComponent() {
     return (
