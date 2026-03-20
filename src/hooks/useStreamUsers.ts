@@ -11,7 +11,7 @@ const useStreamUsers = (client: StreamChat, userId: string) => {
       try {
         // don't fetch myself and admins
         const response = await client.queryUsers(
-          { role: { $nin: ["admin"] } } as any,
+          { id: { $nin: [userId] }, role: { $nin: ["admin"] } } as any,
           { last_active: -1 },
           { limit: 50 },
         );
